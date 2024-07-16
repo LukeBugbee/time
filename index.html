@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Year Activity Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="date-display"></div>
+    <div id="year-view"></div>
+    <div id="day-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-date"></h2>
+        <div id="hour-blocks"></div>
+        <div id="classification-buttons">
+          <button class="classify-btn" data-activity="Work">Work</button>
+          <button class="classify-btn" data-activity="Sleep">Sleep</button>
+          <button class="classify-btn" data-activity="Exercise">
+            Exercise
+          </button>
+          <button class="classify-btn" data-activity="Reading">Reading</button>
+          <button class="classify-btn" data-activity="Recreation">
+            Recreation
+          </button>
+        </div>
+        <div id="selection-box"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
